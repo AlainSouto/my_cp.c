@@ -20,14 +20,22 @@ void copiar(const char *archivo_a_abrir,const char *archivo_a_copiar){
    fclose(archivoCopy);
    fclose(archivoPaste);
 }
+
+
 int main(int argc, char *argv[]){
+   char *dir_o_arch;
 	if(argc!=3){
 		perror("Se deben introducir dos archivos/un archivo y un directorio");
 		exit(EXIT_FAILURE);
 	}
-	if(){
+   dir_o_arch=argv[2];
+   if(dir_o_arch[strlen(dir_o_arch)-1]=="/"){
+      //dir_o_arch+argv[1]
+      
 		copiar(argv[1], argv[2]);
 	}
-	return 0;
+   else{
+      sprintf('dir_o_arch/')
+   }
+	return 0;
 }
-
